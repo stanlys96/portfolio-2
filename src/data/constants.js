@@ -36,7 +36,7 @@ export const skills = [
         image: "/images/flutter-2.png",
       },
       {
-        name: "React Js",
+        name: "React JS",
         image: "/images/react.svg",
       },
       {
@@ -44,8 +44,12 @@ export const skills = [
         image: "/images/react.svg",
       },
       {
-        name: "Next Js",
+        name: "Next JS",
         image: "/images/next-jsjs.png",
+      },
+      {
+        name: "Vue JS",
+        image: "/images/vue.png",
       },
       {
         name: "TypeScript",
@@ -61,19 +65,19 @@ export const skills = [
     title: "Backend",
     skills: [
       {
-        name: "Node Js",
+        name: "Node JS",
         image: "/images/nodejs-2.svg",
       },
       {
-        name: "Express Js",
+        name: "Express JS",
         image: "/images/expressjs.png",
       },
       {
-        name: "Nest Js",
+        name: "Nest JS",
         image: "/images/nestjs.jpeg",
       },
       {
-        name: "Adonis Js",
+        name: "Adonis JS",
         image: "/images/adonis.svg",
       },
       {
@@ -287,7 +291,7 @@ export const projects = [
     description:
       "Making managers more convenient to manage guilds. Only available for Hyfen internals.",
     image: "/images/tools.png",
-    tags: ["React Js", "Next JS", "AWS", "Express JS", "Adonis JS"],
+    tags: ["React JS", "Next JS", "AWS", "Express JS", "Adonis JS"],
     categories: ["Website"],
   },
   {
@@ -297,7 +301,7 @@ export const projects = [
     description:
       "Web App for Metabase internal to manage users' data. Include analytics as well.",
     image: "/images/admin.png",
-    tags: ["React Js", "Next JS", "AWS", "Express JS", "Adonis JS"],
+    tags: ["React JS", "Next JS", "AWS", "Express JS", "Adonis JS"],
     categories: ["Website"],
   },
   {
@@ -307,7 +311,7 @@ export const projects = [
     description:
       "Analytics and monitoring web app. Designed to monitor user transactions.",
     image: "/images/pay.png",
-    tags: ["React Js", "Next JS", "AWS", "Express JS", "Adonis JS"],
+    tags: ["React JS", "Next JS", "AWS", "Express JS", "Adonis JS"],
     categories: ["Website"],
   },
   {
