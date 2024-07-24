@@ -1,25 +1,26 @@
 import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
-import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import { Modal } from "antd";
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000000a7;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // background-color: #000000a7;
   display: flex;
   align-items: top;
   justify-content: center;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   transition: all 0.5s ease;
+  margin: 0 auto;
 `;
 
 const Wrapper = styled.div`
-  max-width: 800px;
-  width: 100%;
+  // max-width: 800px;
+  // width: 100%;
   border-radius: 16px;
   margin: 50px 12px;
   height: min-content;
@@ -223,82 +224,87 @@ const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
   return (
     <Modal
-      open={true}
-      onClose={() => setOpenModal({ state: false, project: null })}
+      open={openModal?.state}
+      onCancel={() => setOpenModal({ state: false, project: null })}
+      onOk={() => setOpenModal({ state: false, project: null })}
+      footer={null}
+      closable={false}
     >
-      <Container>
-        <Wrapper>
-          <CloseRounded
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "20px",
-              cursor: "pointer",
-            }}
-            onClick={() => setOpenModal({ state: false, project: null })}
-          />
-          <Image src={project?.image} />
-          <Title>{project?.title}</Title>
-          <DateContainer>
-            <Date>{project.date}</Date>
-            <TagsOther>
-              {project.categories?.map((tag, index) => {
-                if (tag === "Website") {
-                  return <TagBlue>{tag}</TagBlue>;
-                } else if (tag === "Mobile App") {
-                  return <TagGreen>{tag}</TagGreen>;
-                }
-                return <TagYellow>{tag}</TagYellow>;
-              })}
-            </TagsOther>
-          </DateContainer>
-          <Tags>
-            {project?.tags.map((tag) => (
-              <Tag>{tag}</Tag>
-            ))}
-          </Tags>
-          <Desc>{project?.description}</Desc>
-          {project.member && (
-            <>
-              <Label>Members</Label>
-              <Members>
-                {project?.member.map((member) => (
-                  <Member>
-                    <MemberImage src={member.img} />
-                    <MemberName>{member.name}</MemberName>
-                    <a
-                      href={member.github}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <GitHub />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <LinkedIn />
-                    </a>
-                  </Member>
-                ))}
-              </Members>
-            </>
-          )}
-          <ButtonGroup>
-            {project?.github && (
-              <Button dull href={project?.github} target="new">
-                View Code
-              </Button>
+      {openModal?.state && (
+        <Container>
+          <Wrapper>
+            <CloseRounded
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "20px",
+                cursor: "pointer",
+              }}
+              onClick={() => setOpenModal({ state: false, project: null })}
+            />
+            <Image src={project?.image} />
+            <Title>{project?.title}</Title>
+            <DateContainer>
+              <Date>{project.date}</Date>
+              <TagsOther>
+                {project.categories?.map((tag, index) => {
+                  if (tag === "Website") {
+                    return <TagBlue>{tag}</TagBlue>;
+                  } else if (tag === "Mobile App") {
+                    return <TagGreen>{tag}</TagGreen>;
+                  }
+                  return <TagYellow>{tag}</TagYellow>;
+                })}
+              </TagsOther>
+            </DateContainer>
+            <Tags>
+              {project?.tags.map((tag) => (
+                <Tag>{tag}</Tag>
+              ))}
+            </Tags>
+            <Desc>{project?.description}</Desc>
+            {project.member && (
+              <>
+                <Label>Members</Label>
+                <Members>
+                  {project?.member.map((member) => (
+                    <Member>
+                      <MemberImage src={member.img} />
+                      <MemberName>{member.name}</MemberName>
+                      <a
+                        href={member.github}
+                        target="new"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <GitHub />
+                      </a>
+                      <a
+                        href={member.linkedin}
+                        target="new"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <LinkedIn />
+                      </a>
+                    </Member>
+                  ))}
+                </Members>
+              </>
             )}
-            {project?.webapp && (
-              <Button href={project?.webapp} target="new">
-                View Live App
-              </Button>
-            )}
-          </ButtonGroup>
-        </Wrapper>
-      </Container>
+            <ButtonGroup>
+              {project?.github && (
+                <Button dull href={project?.github} target="new">
+                  View Code
+                </Button>
+              )}
+              {project?.webapp && (
+                <Button href={project?.webapp} target="new">
+                  View Live App
+                </Button>
+              )}
+            </ButtonGroup>
+          </Wrapper>
+        </Container>
+      )}
     </Modal>
   );
 };

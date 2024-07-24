@@ -57,9 +57,7 @@ function App() {
             {/* <Contact /> */}
           </Wrapper>
           <Footer />
-          {openModal.state && (
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          )}
+          <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
         </Body>
       </Router>
     </ThemeProvider>
