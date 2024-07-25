@@ -270,7 +270,7 @@ export const projects = [
     date: "PT Photon",
     description:
       "Mobile app for car rental in the US and Europe regions. Allowing users to rent cars in advance.",
-    image: "/images/avisbudgetgroup.jpeg",
+    image: "/images/waldo.jpeg",
     tags: ["React Native", "Redux"],
     categories: ["Mobile App"],
   },
