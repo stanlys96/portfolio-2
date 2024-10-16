@@ -255,6 +255,17 @@ export const projects = [
     webapp: "https://hyfen.gg",
   },
   {
+    id: 15,
+    title: "Telegram Bot Directory",
+    date: "Freelance",
+    description:
+      "Telegram bot directory to help people find telegram bot easily.",
+    image: "/images/telehub.png",
+    tags: ["React JS", "Next JS", "Strapi"],
+    categories: ["Website"],
+    webapp: "https://www.telehub.bot/",
+  },
+  {
     id: 3,
     title: "Seamless Finance Landing Page",
     date: "Freelance",
