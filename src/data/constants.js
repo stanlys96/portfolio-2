@@ -233,18 +233,6 @@ export const projects = [
     webapp: "https://flappyblast.com",
   },
   {
-    id: 1,
-    title: "Hyfen Play",
-    date: "Hyfen",
-    description:
-      "Portal for web3 games. Making users more convenient to play and transact with web3 games.",
-    image: "/images/play.png",
-    tags: ["React Native", "Adonis JS", "PostgreSQL", "AWS"],
-    categories: ["Mobile App", "Web3"],
-    webapp:
-      "https://play.google.com/store/apps/details?id=com.metabase.gg&hl=en",
-  },
-  {
     id: 2,
     title: "Hyfen Landing Page",
     date: "Hyfen",
