@@ -291,7 +291,7 @@ export const projects = [
     image: "/images/seamless-landing.png",
     tags: ["React JS", "Next JS", "AWS"],
     categories: ["Website"],
-    webapp: "https://seamless.finance",
+    webapp: "https://seamless-landing-page.vercel.app/",
   },
   {
     id: 10,
