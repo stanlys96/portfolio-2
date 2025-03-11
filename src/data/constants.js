@@ -202,6 +202,32 @@ export const education = [
 
 export const projects = [
   {
+    id: 16,
+    title: "Mawquiz",
+    date: "Hackathon",
+    description:
+      "This project is the 3rd winner of ICP Hackathon 9.0. This website allows users to play Kahoot-like games, a quiz game which scores users based on how quick the user answers, plus it has to be correct. There are two modes available: multiplayer and single player. This was built on the ICP blockchain",
+    image: "/images/mawquizzy.jpg",
+    tags: ["React JS", "Next JS", "Motoko", "Express JS", "Socket.io"],
+  },
+  {
+    id: 15,
+    title: "Smart Marketplace Web3",
+    date: "Hackathon",
+    description:
+      "This website allows users to buy and sell digital goods. Users can also leave rating and comments of other people's products.",
+    image: "/images/waw.png",
+    tags: [
+      "React JS",
+      "Next JS",
+      "Solidity",
+      "Ethers JS",
+      "Wagmi",
+      "Express JS",
+      "Hardhat",
+    ],
+  },
+  {
     id: 9,
     title: "Seamless Finance",
     date: "Freelance",
