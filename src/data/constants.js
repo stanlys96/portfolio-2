@@ -209,6 +209,8 @@ export const projects = [
       "This project is the 3rd winner of ICP Hackathon 9.0. This website allows users to play Kahoot-like games, a quiz game which scores users based on how quick the user answers, plus it has to be correct. There are two modes available: multiplayer and single player. This was built on the ICP blockchain",
     image: "/images/mawquizzy.jpg",
     tags: ["React JS", "Next JS", "Motoko", "Express JS", "Socket.io"],
+    categories: ["Website", "Web3"],
+    webapp: "https://cv2ns-7iaaa-aaaac-aac3q-cai.icp0.io/",
   },
   {
     id: 15,
@@ -226,6 +228,8 @@ export const projects = [
       "Express JS",
       "Hardhat",
     ],
+    categories: ["Website", "Web3"],
+    webapp: "https://smart-marketplace-web3.vercel.app/",
   },
   {
     id: 9,
