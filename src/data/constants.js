@@ -120,7 +120,7 @@ export const skills = [
         image: "/images/tensorflow.png",
       },
       {
-        name: "Searborn",
+        name: "Seaborn",
         image: "/images/seaborn.svg",
       },
     ],
