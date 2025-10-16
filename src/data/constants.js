@@ -123,6 +123,10 @@ export const skills = [
         name: "Seaborn",
         image: "/images/seaborn.svg",
       },
+      {
+        name: "Scikit Learn",
+        image: "/images/scikit-learn.png",
+      },
     ],
   },
   {
