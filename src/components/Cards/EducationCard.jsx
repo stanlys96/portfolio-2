@@ -144,7 +144,14 @@ const EducationCard = ({ education }) => {
       )}
       {education.desc && (
         <Description>
-          <Span>{education.desc}</Span>
+          <span
+            style={{
+              WebkitLineClamp: 4,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+            dangerouslySetInnerHTML={{ __html: education.desc }}
+          />
         </Description>
       )}
     </Card>

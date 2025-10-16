@@ -1,6 +1,11 @@
 export const Bio = {
   name: "Stanly Sukmajaya",
-  roles: ["Full Stack Developer", "Mobile App Developer", "Web3 Developer"],
+  roles: [
+    "Data Scientist",
+    "AI Engineer",
+    "Full Stack Developer",
+    "Mobile App Developer",
+  ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/stanlys96",
@@ -21,8 +26,13 @@ export const myWork = [
     image: "/images/icon-app.svg",
   },
   {
-    title: "Web3 Development",
-    desc: "Involved in several projects that deal with smart contracts, cryptocurrencies and NFTs.",
+    title: "Data Scientist",
+    desc: "Finished a data science certification from Hacktiv8 and IBM Data Science certification (Coursera).",
+    image: "/images/icon-dev.svg",
+  },
+  {
+    title: "AI Engineer",
+    desc: "Finished Machine Learning specialization by DeepLearning.AI and Mathematics for Machine Learning specialization by Imperial College London from Coursera.",
     image: "/images/icon-dev.svg",
   },
 ];
@@ -95,19 +105,23 @@ export const skills = [
     ],
   },
   {
-    title: "Web3",
+    title: "Data Science & AI",
     skills: [
       {
-        name: "Solidity",
-        image: "/images/solidity.png",
+        name: "Pandas",
+        image: "/images/pandas.png",
       },
       {
-        name: "Hardhat",
-        image: "/images/hardhat.png",
+        name: "Matplotlib",
+        image: "/images/matplotlib.png",
       },
       {
-        name: "Ethers JS",
-        image: "/images/ethers.jpeg",
+        name: "TensorFlow",
+        image: "/images/tensorflow.png",
+      },
+      {
+        name: "Searborn",
+        image: "/images/seaborn.svg",
       },
     ],
   },
@@ -125,6 +139,10 @@ export const skills = [
       {
         name: "AWS",
         image: "/images/aws.jpg",
+      },
+      {
+        name: "Docker",
+        image: "/images/docker.png",
       },
     ],
   },
@@ -180,6 +198,19 @@ export const experiences = [
 ];
 
 export const education = [
+  {
+    id: 2,
+    img: "/images/hacktiv8.png",
+    school: "Hacktiv8",
+    date: "Sept 2024 - Nov 2024",
+    grade: "85.23%",
+    desc: `Learned data analytics, data visualization and machine learning. Learned how to visualize data so it is beautifully presented and easier to understand, analyzing data and build end to end machine learning models, supervised and unsupervised.
+    <br/><br/>Programming Language: Python, SQL
+    <br/><br/>Python Libraries: Pandas, Scikit-learn, Numpy, Matplotlib, Seaborn, Streamlit
+    <br/><br/>Tools: Hugging Face, Tableau
+    <br/><br/>Database: PostgreSQL`,
+    degree: "Full Stack JavaScript Immersive Program",
+  },
   {
     id: 0,
     img: "/images/hacktiv8.png",
@@ -273,17 +304,6 @@ export const projects = [
   //   webapp: "https://hyfen.gg",
   // },
   {
-    id: 15,
-    title: "Telegram Bot Directory",
-    date: "Freelance",
-    description:
-      "Telegram bot directory to help people find telegram bot easily.",
-    image: "/images/telehub.png",
-    tags: ["React JS", "Next JS", "Strapi"],
-    categories: ["Website"],
-    webapp: "https://www.telehub.bot/",
-  },
-  {
     id: 3,
     title: "Seamless Finance Landing Page",
     date: "Freelance",
@@ -363,38 +383,6 @@ export const projects = [
     image: "/images/adira-2.png",
     tags: ["Flutter", "Express JS"],
     categories: ["Mobile App"],
-  },
-  {
-    id: 10,
-    title: "Escape Official NFT",
-    date: "Freelance",
-    description: "Website to mint escApe Official NFT.",
-    image: "/images/escape-official.png",
-    tags: ["React JS", "Next JS", "Ethers JS", "Solidity", "Hardhat"],
-    categories: ["Website", "Web3"],
-    webapp: "https://escape-official.vercel.app/",
-  },
-  {
-    id: 11,
-    title: "NFT Marketplace",
-    date: "Personal",
-    description: "Website for buying and selling NFTs.",
-    image: "/images/nft-marketplace.png",
-    tags: ["React JS", "Next JS", "Ethers JS", "Solidity", "Hardhat"],
-    categories: ["Website", "Web3"],
-    github: "https://github.com/stanlys96/NFT-Marketplace-Next-JS",
-    webapp: "https://nft-marketplace-goerli.vercel.app/",
-  },
-  {
-    id: 12,
-    title: "Staking dApp",
-    date: "Personal",
-    description: "Website to stake tokens.",
-    image: "/images/staking-dapp.png",
-    tags: ["React JS", "Next JS", "Ethers JS", "Solidity", "Hardhat"],
-    categories: ["Website", "Web3"],
-    github: "https://github.com/stanlys96/Staking-DAPP-NextJS",
-    webapp: "https://staking-dapp-goerli.vercel.app/",
   },
   {
     id: 13,
