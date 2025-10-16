@@ -26,12 +26,12 @@ export const myWork = [
     image: "/images/icon-app.svg",
   },
   {
-    title: "Data Scientist",
+    title: "Data Science",
     desc: "Finished a data science certification from Hacktiv8 and IBM Data Science certification (Coursera).",
     image: "/images/icon-dev.svg",
   },
   {
-    title: "AI Engineer",
+    title: "AI Engineering",
     desc: "Finished Machine Learning specialization by DeepLearning.AI and Mathematics for Machine Learning specialization by Imperial College London from Coursera.",
     image: "/images/icon-dev.svg",
   },
