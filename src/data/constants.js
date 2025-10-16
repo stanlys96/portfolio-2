@@ -315,7 +315,7 @@ export const projects = [
     image: "/images/flappyblast.png",
     tags: ["React JS", "Next JS", "Ethers JS", "Express JS", "PostgreSQL"],
     categories: ["Website", "Web3"],
-    webapp: "https://flappyblast.com",
+    webapp: "https://flappy-blast.vercel.app/",
   },
   // {
   //   id: 2,
