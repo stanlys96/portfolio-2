@@ -199,6 +199,30 @@ export const experiences = [
 
 export const education = [
   {
+    id: 3,
+    img: "/images/deeplearningai.jpeg",
+    school: "DeepLearning.AI (Coursera)",
+    degree: "Machine Learning Specialization",
+    desc: "Learned about logistic regression, linear regression, neural networks and other machine learning algorithms. Also learned about machine learning best practices.",
+    date: "Aug 2025 - current",
+  },
+  {
+    id: 4,
+    img: "/images/ibm.png",
+    school: "IBM (Coursera)",
+    degree: "IBM Data Science",
+    desc: "Learned about data analytics, data visualization and machine learning.",
+    date: "Aug 2025 - current",
+  },
+  {
+    id: 5,
+    img: "/images/icl.png",
+    school: "Imperial College London (Coursera)",
+    degree: "Mathematics for Machine Learning Specialization",
+    desc: "Learned about the mathematics used in machine learning, such as linear algebra and calculus.",
+    date: "Aug 2025 - current",
+  },
+  {
     id: 2,
     img: "/images/hacktiv8.png",
     school: "Hacktiv8",
